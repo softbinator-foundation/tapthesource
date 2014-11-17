@@ -1,0 +1,24 @@
+{
+  "name": "tapthesource",
+  "version": "1.0.0",
+  "authors": [
+    "Mihai Nica <mihai@redecs.net>"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.tapthesource.eu/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "jquery": "~2.1.1",
+    "less.js": "~2.0.0",
+    "normalize.css": "~1.0.0"
+  }
+}
