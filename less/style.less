@@ -1,5 +1,6 @@
 @import "../components/normalize.css/normalize.css";
 @import "../components/lesshat/build/lesshat-prefixed.less";
+@import "../components/bootstrap/less/mixins/image.less";
 
 @primary-color: #93c8ea;
 @secondary-color: #f26b6a;
@@ -30,7 +31,7 @@ body {
   width: 221px;
   height: 41px;
   text-indent: -2560px;
-  background: url(../img/softbinator.png);
+  .img-retina('../img/softbinator.png', '../img/softbinator@2x.png', 221px, 41px);
 }
 
 .primary-color {

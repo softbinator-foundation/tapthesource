@@ -7,7 +7,13 @@ body {
   width: 221px;
   height: 41px;
   text-indent: -2560px;
-  background: url(../img/softbinator.png);
+  background-image: url("../img/softbinator.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .softbinator {
+    background-image: url("../img/softbinator@2x.png");
+    background-size: 221px 41px;
+  }
 }
 .primary-color {
   color: #93c8ea;
