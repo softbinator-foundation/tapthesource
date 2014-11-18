@@ -107,6 +107,11 @@ body {
   margin: 80px 0;
   color: #fff;
 
+  @media (max-width: @screen-xs-max) {
+    @width: @screen-xs - 100;
+    width: @width;
+    margin-left: -(@width/2);
+  }
   @media (min-width: @screen-sm-min) {
     @width: @screen-sm - 100;
     width: @width;
@@ -222,13 +227,15 @@ body {
       font-weight: 100;
 
       &.lg {
-        font-size: 48px;
+        font-size: 44px;
       }
     }
   }
 
   &.primary h3 .secondary-color {
     font-weight: 600;
+
+
   }
 }
 
@@ -245,38 +252,23 @@ body {
 
 #footer {
   font-size: 16px;
-  font-style: italic;
 
   .powered-by {
-    @sponsor-width: 120px;
-    @sponsor-height: 120px;
+    text-align: center;
+    overflow: hidden;
 
-    .sponsor {
+    .sponsor, .spacer {
       display: inline-block;
-      width: @sponsor-height;
-      height: @sponsor-height;
-      line-height: @sponsor-height;
-      text-indent: -2560px;
-      outline: 0;
-
-      &.madrivo {
-        @sponsor-width: 375px;
-        width: @sponsor-width;
-        .img-retina("../img/madrivo.jpg", "../img/madrivo@2x.jpg", @sponsor-width, @sponsor-height);
-      }
-
-      &.geekwanted {
-        @sponsor-width: 453px;
-        width: @sponsor-width;
-        .img-retina("../img/geekwanted.jpg", "../img/geekwanted@2x.jpg", @sponsor-width, @sponsor-height)
-      }
+      margin-right: 24px;
     }
 
     .spacer {
+      display: inline-block;
       font-family: @title-font-lite;
       font-size: 48px;
-      padding: 0 24px;
+      padding: 24px 0;
       font-style: normal;
+      vertical-align: top;
     }
   }
 }
